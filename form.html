@@ -8,16 +8,16 @@
 <body>
     <h1>HTML Forms</h1>
     <form>
-        <label>First Name</label>
+        <label>First Name*</label>
         <input type="text" name="firstname" placeholder="Enter First Name" required /><br><br>
-        <label>Last Name</label>
+        <label>Last Name*</label>
         <input type="text" name="lastname" placeholder="Enter Last Name" required><br><br>
-        <label>Enter Email </label>
+        <label>Enter Email* </label>
         <input type="email" name="email" placeholder="Enter email" required/><br><br>
-        <label>Mo.Number</label>
+        <label>Mo.Number*</label>
         <input type="tel" name="tel" id="tel" placeholder="Enter Mobile number" required><br><br>
 
-        <label>Gender</label><br>
+        <label>Gender*</label><br>
         <input type="radio" name="gender" value="" id="male">Male
         <input type="radio" name="gender" value="" id="female">Female
         <input type="radio" name="gender" value="" id="other">Other<br><br>
@@ -27,12 +27,20 @@
         <input type="checkbox" name="maths" id="maths">Maths
         <input type="checkbox" name="physics" id="physics">Physics<br><br>
 
-        <label>Upload File</label>
+        <label>Upload File*</label>
         <input type="file" name="file" id="file" placeholder="Enter Upload File" required><br>
 
-        <br> <label>Enter URL</label>
+        <br> <label>Enter URL*</label>
         <input type="url" name="url" id="url" placeholder="Enter url" required><br>
         <br>
+        <label>Select your choice</label>
+        <select name="select" id="select" >
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">JavaScript</option>
+            <option value="4">React</option>
+        </select>
+        <br><br>
         <label>About</label><br>
         <textarea name="about" id="about" cols="30" rows="10" placeholder="About your self" required></textarea><br><br>
         <label>Submit / Reset</label><br>
